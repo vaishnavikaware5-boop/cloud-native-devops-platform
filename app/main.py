@@ -19,8 +19,10 @@ trains = [
 
 @app.get("/health")
 def health():
-    return {"status": "healthy"}
-
+    return {
+        "status": "healthy",
+        "service": "train-api"
+    }
 
 @app.get("/trains")
 def get_trains():
