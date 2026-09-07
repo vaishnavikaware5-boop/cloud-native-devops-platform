@@ -32,3 +32,6 @@ jobs:
 
       - name: Lint Helm chart
         run: helm lint helm/train-api
+
+      - name: Build Docker image
+        run: docker build -t train-api:${{ github.sha }} .
