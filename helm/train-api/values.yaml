@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: train-api
+  repository: ghcr.io/vaishnavikaware5-boop/train-api
   tag: a12466aec085be66abb542d9acdc0442eb6a2f28
   pullPolicy: IfNotPresent
 
